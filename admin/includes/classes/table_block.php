@@ -19,7 +19,7 @@
     var $table_row_parameters = '';
     var $table_data_parameters = '';
 
-    function tableBlock($contents) {
+    function __construct($contents) {
       $tableBox_string = '';
 
       $form_set = false;

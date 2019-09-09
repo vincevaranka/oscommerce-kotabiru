@@ -19,7 +19,8 @@
     if (!is_array($ar)) return false;
 
     reset($ar);
-    while (list($key, $value) = each($ar)) {
+    //while (list($key, $value) = each($ar)) { //deprecated php7
+    foreach($ar as $key =>$value){
       if (is_array($ar[$key])) {
         do_magic_quotes_gpc($ar[$key]);
       } else {

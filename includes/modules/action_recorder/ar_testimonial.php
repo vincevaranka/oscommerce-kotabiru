@@ -7,7 +7,7 @@
     var $minutes = 15;
     var $identifier;
 
-    function ar_testimonial() {
+    function __construct() {
       $this->title = MODULE_ACTION_RECORDER_TESTIMONIAL_TITLE;
       $this->description = MODULE_ACTION_RECORDER_TESTIMONIAL_DESCRIPTION;
 
