@@ -143,7 +143,7 @@
     }
   }
 
-  if (!extension_loaded('mysql')) {
+  if (!extension_loaded('mysqli')) {
     $warning_array['mysql'] = 'The MySQL extension is required but is not installed. Please enable it to continue installation.';
   }
 
