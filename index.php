@@ -1,12 +1,12 @@
 <?php
 /*
   $Id$
-
+  
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
   Copyright (c) 2010 osCommerce
-
+  vincevaranka
   Released under the GNU General Public License
 */
 
