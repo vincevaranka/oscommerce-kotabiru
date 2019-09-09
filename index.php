@@ -6,7 +6,6 @@
   http://www.oscommerce.com
 
   Copyright (c) 2010 osCommerce
-  vincevarankaaa
   Released under the GNU General Public License
 */
 
