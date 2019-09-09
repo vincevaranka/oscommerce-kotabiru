@@ -1,0 +1,6 @@
+History
+
+* + include/configure.php
+	DIR_WS_THEME
+  + create folder theme and booth 
+

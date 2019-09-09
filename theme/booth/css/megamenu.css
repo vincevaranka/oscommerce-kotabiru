@@ -1,0 +1,100 @@
+/* Reset */
+
+.megamenu,.megamenu a,.megamenu ul,.megamenu li,.megamenu div,.megamenu form,.megamenu input {margin: 0;padding: 0;border: none;outline: none; cursor:pointer}
+.megamenu{width:100%; margin-right:15px;}
+.megamenu a { text-decoration: none; }
+.megamenu li { list-style: none; }
+/* Menu Container */
+.megamenu {display: inline-block;cursor: default;z-index: 500; }
+/* Menu List */
+.megamenu > li {display: inline-block; }
+
+/* Menu Links */
+.megamenu > li > a {display: block;z-index: 510; padding: 22px 20px 25px 20px;font-size: 15px;color: #999;
+
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+	text-transform:uppercase;
+	margin-right:-4px;
+	 border-right:1px solid #fff
+}
+.megamenu > li > .cat > a{color:#01b3df;}
+.megamenu > .cat:hover > a{color:#fff;}
+.megamenu > li:hover > a { background: #2db065; color:#fff}
+.megamenu > li:first-child > a {border-radius: 1px 0 0 1px;border-left: none;}
+/* Search Form */
+
+.megamenu > li > div {
+	position: absolute !important;
+	display: block;
+	max-width:98.3%;
+	top: 68px;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 0 0 3px 3px;
+	-webkit-transition: all .3s ease .15s;
+	-moz-transition: all .3s ease .15s;
+	-o-transition: all .3s ease .15s;
+	-ms-transition: all .3s ease .15s;
+	transition: all .3s ease .15s;
+	 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); border-top:3px solid #2db065;
+	padding:0 20px;
+
+}
+
+.megamenu > li:hover > div {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+}
+
+/* Menu Content Styles */
+.megamenu .megamenu-column {
+	float: left;
+	width: 20%;
+	padding: 1.5%;
+	
+}
+
+.megamenu .megamenu-column h3 {
+	margin: 10px 0 15px 0;
+	line-height: 18px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #372f2b;
+	text-transform: uppercase;
+}
+
+.megamenu .megamenu-column h3.orange { color: #ff722b; }
+
+.megamenu .megamenu-column li a {
+	display: block;
+	line-height: 26px;
+	font-size: 15px;
+	color: #888888;
+}
+.megamenu .megamenu-column li a:hover { color: #2db065; font-weight:500 }
+/* Search Form */
+
+.megamenu .btn-default{
+	padding:12px 8px 8px 20px; 
+	color:#555;
+	border:1px solid #eaeaea;
+	background:none;
+	border-radius : 0 10px 10px 0px;
+	font-size:18px;
+}
+
+.megamenu .btn-default > i{color:#555;}
+.megamenu > li.megamenu-search input[type="submit"]:hover { }
+.megamenu > li > a > i{position:absolute;  top:35px; left:70px;color:#01b3df;}
+
+
+/* Menu Dropdown */
