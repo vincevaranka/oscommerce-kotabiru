@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_topmenu_currencies() {
+    function __construct() {
       $this->title = MODULE_BOXES_TOPMENU_CURRENCIES_TITLE;
       $this->description = MODULE_BOXES_TOPMENU_CURRENCIES_DESCRIPTION;
 
@@ -52,7 +52,8 @@
           reset($currencies->currencies);
           $currencies_array = array();
           $url = '';
-				  while (list($key, $value) = each($currencies->currencies)) {
+				  //while (list($key, $value) = each($currencies->currencies)) {
+          foreach($currencies->currencies as $key => $value){
 						if ($current_curr_key == $key )	{
 							$current_curr = 'activ';
 						}else{
@@ -64,7 +65,8 @@
 
           $hidden_get_variables = '';
           reset($HTTP_GET_VARS);
-          while (list($key, $value) = each($HTTP_GET_VARS)) {
+          //while (list($key, $value) = each($HTTP_GET_VARS)) {
+          foreach($HTTP_GET_VARS as $key => $value){
             if ( is_string($value) && ($key != 'currency') && ($key != tep_session_name()) && ($key != 'x') && ($key != 'y') ) {
               $hidden_get_variables .= tep_draw_hidden_field($key, $value);
             }

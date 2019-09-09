@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_parallax_background() {
+    function __construct() {
       $this->title = MODULE_BOXES_PARALLAX_BACKGROUND_TITLE;
       $this->description = MODULE_BOXES_PARALLAX_BACKGROUND_DESCRIPTION;
 

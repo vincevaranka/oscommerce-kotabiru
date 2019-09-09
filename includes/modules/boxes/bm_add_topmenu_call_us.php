@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_topmenu_call_us() {
+    function __construct() {
       $this->title = MODULE_BOXES_TOPMENU_CALL_US_TITLE;
       $this->description = MODULE_BOXES_TOPMENU_CALL_US_DESCRIPTION;
 

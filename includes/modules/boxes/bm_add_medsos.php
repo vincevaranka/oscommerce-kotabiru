@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_medsos() {
+    function __construct() {
       $this->title = MODULE_BOXES_MEDSOS_TITLE;
       $this->description = MODULE_BOXES_MEDSOS_DESCRIPTION;
 

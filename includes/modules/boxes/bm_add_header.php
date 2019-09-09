@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_header() {
+    function __construct() {
       $this->title = MODULE_BOXES_HEADER_TITLE;
       $this->description = MODULE_BOXES_HEADER_DESCRIPTION;
 

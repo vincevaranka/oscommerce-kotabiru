@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_slider1() {
+    function __construct() {
       $this->title = MODULE_BOXES_SLIDER1_TITLE;
       $this->description = MODULE_BOXES_SLIDER1_DESCRIPTION;
 

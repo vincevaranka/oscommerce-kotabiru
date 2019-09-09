@@ -8,7 +8,7 @@
     var $enabled = false;
 	var $pages;
 
-    function bm_add_column_categories() {
+    function __construct() {
       $this->title = MODULE_BOXES_COLUMN_CATEGORIES_TITLE;
       $this->description = MODULE_BOXES_COLUMN_CATEGORIES_DESCRIPTION;
 
@@ -69,8 +69,9 @@
 				$output .= '<a class="'.$active.'" href="'.tep_href_link(FILENAME_DEFAULT, 'cPath=' . $cPath_tree.'_'.$categories_top['categories_id']).'">'.$categories_top['categories_name'].'</a>';
 				$output .= $this->cattreeLeft($categories_top['categories_id'], ($level+1), $cPath_tree.'_'.$categories_top['categories_id']);
 				$output .='</li>';
+				
 				if($i == ($totCat-1)){
-					if(count($level) == $i && $level >1) {
+					if($level == $i && $level >1) {
 					$output .= '</ul>';} else { $output .='</ul></li>';}
 					//$output .= '</ul></li>';
 				}			

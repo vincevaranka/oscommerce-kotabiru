@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_reviews() {
+    function __construct() {
       $this->title = MODULE_BOXES_REVIEWS_TITLE;
       $this->description = MODULE_BOXES_REVIEWS_DESCRIPTION;
 

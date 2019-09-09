@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_slider_productsnew() {
+    function __construct() {
       $this->title = MODULE_BOXES_SLIDER_PRODUCTSNEW_TITLE;
       $this->description = MODULE_BOXES_SLIDER_PRODUCTSNEW_DESCRIPTION;
 

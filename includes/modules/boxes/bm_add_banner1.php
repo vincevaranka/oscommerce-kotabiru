@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 	
-    function bm_add_banner1() {
+    function __construct() {
       $this->title = MODULE_BOXES_BANNER1_TITLE;
       $this->description = MODULE_BOXES_BANNER1_DESCRIPTION;
 

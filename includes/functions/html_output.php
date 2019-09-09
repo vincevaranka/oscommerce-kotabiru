@@ -85,10 +85,10 @@
     if (tep_not_null($alt)) {
       $image .= ' title="' . tep_output_string($alt) . '"';
     }
-
+    //echo $src.'---'.$alt.'--W--'.$width.'--H--'.$height.'--P---'.$parameters;
     if ( (CONFIG_CALCULATE_IMAGE_SIZE == 'true') && (empty($width) || empty($height)) ) {
       if ($image_size = @getimagesize($src)) {
-        if (empty($width) && tep_not_null($height)) {
+        if (empty($width) && tep_not_null($height) && empty($height)) {
           $ratio = $height / $image_size[1];
           $width = intval($image_size[0] * $ratio);
         } elseif (tep_not_null($width) && empty($height)) {

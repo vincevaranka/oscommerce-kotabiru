@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_topmenu_languages() {
+    function __construct() {
       $this->title = MODULE_BOXES_TOPMENU_LANGUAGES_TITLE;
       $this->description = MODULE_BOXES_TOPMENU_LANGUAGES_DESCRIPTION;
 

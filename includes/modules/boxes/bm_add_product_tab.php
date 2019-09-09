@@ -19,7 +19,7 @@
     var $enabled = false;
     var $pages;	
 
-    function bm_add_product_tab() {
+    function __construct() {
       $this->title = MODULE_BOXES_PRODUCT_TAB_TITLE;
       $this->description = MODULE_BOXES_PRODUCT_TAB_DESCRIPTION;
 

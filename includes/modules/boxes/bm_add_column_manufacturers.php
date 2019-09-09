@@ -7,7 +7,7 @@
     var $sort_order;
     var $enabled = false;
 	var $pages;
-    function bm_add_column_manufacturers() {
+    function __construct() {
       $this->title = MODULE_BOXES_COLUMN_MANUFACTURERS_TITLE;
       $this->description = MODULE_BOXES_COLUMN_MANUFACTURERS_DESCRIPTION;
 
